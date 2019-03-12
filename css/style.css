@@ -1,0 +1,38 @@
+
+
+.vertical-middle{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.col-sca-logo img{
+    left: 55px;
+    width:350px;
+
+}
+
+.row.top-nav{
+    height: 120px;
+
+}
+
+
+.col-fedral-logo img{
+    
+    width: 80px;
+    right: 55px;
+}
+
+ 
+
+#main-bg {
+    height: -moz-calc(100vh - 192px);
+height: -webkit-calc(100vh - 192px);
+height: calc(100vh - 192px);
+
+ }
+
+
+ul.nav{
+    background-color: #d39e00;
+}

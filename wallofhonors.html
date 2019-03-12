@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+ 
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+ 
+ <style>
+     @font-face {
+  font-family: "GeDinar";
+  src: url("font/GE Dinar One Medium.otf");
+  }
+  body{
+    font-family: GeDinar;
+  }
+
+  .left-tree { width: 40% ; float:left}
+  .left-tree img {
+    width: 100%;
+                max-width:400px;
+                display: inherit;
+                margin: auto;
+  }
+   .honor-description { width:60%; float:left}
+  .col-sca-logo, .col-fedral-logo{
+    width: 50%;
+    float: left;
+  }
+          
+  .grid-container {
+          width: 100%;
+          box-sizing:border-box;
+          max-width: 1500px;
+          margin: auto;
+           
+          }
+          
+  .grid-container:after ,#finger-prints::after{
+              content: "";
+              display: block;
+              height: 0;
+              clear: both;
+          }
+
+  .wave {
+    color: #fff;
+    overflow: hidden;
+    position: absolute;
+    transform: translateY(-50%);
+    width: 100%;
+}
+
+#finger-prints {
+  margin-bottom: 5%;
+}
+
+#finger-prints span{
+
+  width:33.33%;
+  float: left;
+
+   
+
+}
+
+#finger-prints img{
+  display: inherit;
+  margin:auto;
+}
+
+#finger-prints p {
+  margin-top: 5px;
+  text-align: center;
+   
+  
+}
+
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+ 
+ 
+.avt-img-wrap .avt-img {
+  display: inline-block;
+  
+  background-color: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 50%;
+  color: #2374B9;
+  font-size: 2.3em;
+  letter-spacing: -2px;
+  text-indent: -.6em;
+  line-height: 0;
+  height: 150px;
+    width: 150px;
+}
+ 
+.section-padding {
+    padding: 80px 0;
+}
+
+ 
+
+.single-staff-item * {
+
+  text-align: center;
+}
+.staff-meta {
+    font-size: 12px;
+    color: #b7b7b7;
+    margin-top: 20px;
+}
+
+.staff-meta h3 {
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+.staff-list .owl-nav button {
+    display: inline-block;
+    width: 50px;
+    height: 40px;
+    background-color: #f3f3f3 !important;
+    margin-left: 10px;
+    transition: .3s;
+}
+.staff-list .owl-nav button:hover{
+    background: #14ADF3 !important;
+    color: white !important;
+}
+.staff-list .owl-nav {
+    position: absolute;
+    right: 0;
+    top: -46px;
+}
+.staff-desc{
+    margin-top: 20px;
+}
+
+ul.details{
+  padding: 0;
+}
+li{
+  list-style: none;
+}
+
+.honor-description #long-text{
+  padding: 15px;
+        font-size: 1.5rem;
+        text-align: justify;
+        direction: rtl;
+        margin-top:5%;
+
+}
+
+@media only screen and (max-width: 600px) {
+  .left-tree , .honor-description , .col-sca-logo{ width:100%; float:none;}
+  .honor-description #long-text {font-size: 1rem;}
+  .col-fedral-logo{display: none;}
+  .col-sca-logo img{ left:50%; transform: translate(-50%,-50%); }
+  .left-tree img{ width: 75%; margin: auto; display: inherit;}
+
+}
+
+
+   </style>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+</head>
+<body>
+    <div style="
+    background-color: #ebebeb;
+"><div class="top-header" style="
+        margin-left: 0;
+        margin-right: 0px;
+        max-width: 1558px;
+        margin: auto;
+        position: relative;
+        height: 150px;
+        /* background: #ebebeb; */
+        ">
+                <div class="col-sca-logo"><img src="img/sca-logo.png" class="vertical-middle"></div>
+                <div class="col-fedral-logo"><img src="img/fedral.png" class="vertical-middle"></div>
+    </div></div>
+      
+    
+                      <div id="main-bg"  style="background: url(img/bg3.png);
+                      background-repeat: no-repeat;
+                      background-size: cover;
+                      height: auto;
+                      background-position: center; ">
+    
+          
+         
+          <div class="grid-container" style="padding: 20px; box-sizing: border-box;">
+            <div class="left-tree"> 
+             
+                <img src="img/tree.png" width="100%"/>
+               
+         </div>
+        <div class="honor-description"> 
+          <div>
+        <p id="long-text"> عزيزي الموظف..
+        <br>
+             
+            تم تخصيص هذه الصفحة وذلك تقديراً
+            وعرفاناً للموظفين الذين تركوا بصمة ايجابية 
+            في الهيئة من خلال تقديم المقترحات  <strong> الابداعية</strong> 
+             <strong>  والابتكارية</strong>، فضلاً عن توثيق حقوق ملكية
+            الافكار والمقترحات لرصد المساهمات المتميزة
+            من الموظفين في بناء صرح الهيئة على مر 
+            السنين من خلال المبادرات والأفكار
+            المتميزة التي تبنتها الهيئة.</p>
+            </div>
+            <div id="finger-prints" style="width:100%;">
+
+                <span><img src="img/innovation.png" width="100px"><p>الابتكارية</p></span>
+                <span><img src="img/both.png" width="100px"> <p>الابتكارية و الابداعية</p></span>
+                <span><img src="img/creation.png" width="100px"><p>الابداعية</p> </span>
+             </div>
+        
+            
+          </div>
+        </div>
+
+        
+        
+                      </div>
+                      <div class="wave " aria-hidden="true">
+                      <svg viewBox="0 0 1440 120" id="wave" width="100%" height="100%">
+                          <path style="fill:white;" d="M1440,21.2101911 L1440,120 L0,120 L0,21.2101911 C120,35.0700637 240,42 360,42 C480,42 600,35.0700637 720,21.2101911 C808.32779,12.416393 874.573633,6.87702029 918.737528,4.59207306 C972.491685,1.8109458 1026.24584,0.420382166 1080,0.420382166 C1200,0.420382166 1320,7.35031847 1440,21.2101911 Z"></path>
+                        </svg>
+                        </div>
+
+                        
+
+                        <!-- <article class="timeline">
+                          <div class="customNavigation">
+                            <a class="btn prev">Previous</a>
+                            <a class="btn next">Next</a>
+                           
+                          </div>
+                          <div class="timeline-carousel owl-carousel">
+                         
+                          
+                          </div> 
+                      </article> -->
+        
+               
+                      <div class="section-padding">
+                          <div class="container">
+                            
+                              
+                              
+                                  
+                                      <div class="owl-carousel staff-list">
+                                         
+                                          <!-- code is generated here -->
+                                      
+                                      </div>
+                                   
+                              </div>
+                          
+                      </div>
+                  
+               
+                      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+                      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+                      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+                      <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+                      <script src="main.js"></script>    
+
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+ 
+<script src="js/owl.carousel.js" ></script>
+<script src="js/logic.js" ></script>
+
+<script>
+  $(document).ready(function(){
+  $(".owl-carousel").owlCarousel({
+ 
+loop:true,
+margin:10,
+responsiveClass:true,
+responsive:{
+    0:{
+        items:1,
+        nav:true
+    },
+    600:{
+        items:2,
+        nav:false
+    },
+    1000:{
+        items:3,
+        nav:true,
+        loop:false
+    }
+}
+ 
+
+
+  });
+});
+ 
+ </script>
+</html>
