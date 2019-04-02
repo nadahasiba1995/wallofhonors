@@ -23,16 +23,19 @@ body {
 
 }
 
-#head{
+#head-ar, #head-en{
     color:#333;
+ 
 }
 
+
+
 .container {
-  color: #333;
+  
   text-align: center;
   position: absolute;
     left: 50%;
-    top: 35%;
+    top: 50%;
     transform: translate(-50%,-50%);
     width: 750px;
 }
@@ -70,10 +73,12 @@ li span {
 
 
 <div class="container">
-  <img src="prize.png" width="400px">
-  
-  <h1 id="head"> العد التنازلي للاستعداد لجائزة محمد بن راشد للتميز الحكومي</h1>
-  <ul>
+    
+
+  <img src="prize.png" width="250px">
+  <h1 id="head-ar"> العد التنازلي للاستعداد لجائزة محمد بن راشد للتميز الحكومي</h1>
+    <h1 id="head-en">Countdown to prepare for the Mohammed bin Rashid Award for Government Excellence</h1>
+   <ul>
     <li><span id="days"></span><p>يوم</p></li>
     <li><span id="hours"></span><p>ساعة</p></li>
     <li><span id="minutes"></span><p>دقيقة</p></li>
@@ -113,27 +118,27 @@ let countDown = new Date('Aug 30, 2020 00:00:00').getTime(),
     }, second)
 
 
-    var en=["Days", "hours", "Minutes","Seconds","Countdown to prepare for the Mohammed bin Rashid Award for Government Excellence"];
-    var ar= [ "يوم","ساعة","دقيقة","ثانية","العد التنازلي للاستعداد لجائزة محمد بن راشد للتميز الحكومي"];
-    var arbool=true;
-    window.setInterval(function() {
-      console.log(arbool);
-     if (arbool){
-       $("#head").html(ar[4]);
-      $("li p").eq(0).html(ar[0]);
-      $("li p").eq(1).html(ar[1]);
-      $("li p").eq(2).html(ar[2]);
-      $("li p").eq(3).html(ar[3]);
-      arbool=false;
-      }
-      else if (!arbool){
-        $("#head").html(en[4]);
-      $("li p").eq(0).html(en[0]);
-      $("li p").eq(1).html(en[1]);
-      $("li p").eq(2).html(en[2]);
-      $("li p").eq(3).html(en[3]);
-      arbool=true;
-      }
+    // var en=["Days", "hours", "Minutes","Seconds","Countdown to prepare for the Mohammed bin Rashid Award for Government Excellence"];
+    // var ar= [ "يوم","ساعة","دقيقة","ثانية","العد التنازلي للاستعداد لجائزة محمد بن راشد للتميز الحكومي"];
+    // var arbool=true;
+//     window.setInterval(function() {
+//       console.log(arbool);
+//      if (arbool){
+//        $("#head").html(ar[4]);
+//       $("li p").eq(0).html(ar[0]);
+//       $("li p").eq(1).html(ar[1]);
+//       $("li p").eq(2).html(ar[2]);
+//       $("li p").eq(3).html(ar[3]);
+//       arbool=false;
+//       }
+//       else if (!arbool){
+//         $("#head").html(en[4]);
+//       $("li p").eq(0).html(en[0]);
+//       $("li p").eq(1).html(en[1]);
+//       $("li p").eq(2).html(en[2]);
+//       $("li p").eq(3).html(en[3]);
+//       arbool=true;
+//       }
 
       
 
@@ -141,7 +146,7 @@ let countDown = new Date('Aug 30, 2020 00:00:00').getTime(),
   
 
 
-}, 8000);
+// }, 8000);
 
 
      
