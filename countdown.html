@@ -21,8 +21,7 @@ body {
 }
 
 #head{
-    color:white;
-    margin-bottom:40px;
+    color:#333;
 }
 
 .container {
@@ -37,18 +36,18 @@ body {
 
  ul{
     margin-top: 15px;
-    border: 1px solid white;
+    border: 2px solid#333;
     border-radius: 5px;
  }
 
 
 li {
   display: inline-block;
-  font-size: 1.5em;
+  font-size: 1em;
   list-style-type: none;
   padding: 1em;
   text-transform: uppercase;
-  color: white;
+  color:#333;
  
 
 }
@@ -67,12 +66,12 @@ li span {
 
 
 <div class="container">
-  <h1 id="head">يتبقى على التأهيل بجائزة محمد بن راشد للتميز الحكومي</h1>
+  <h1 id="head"> العد التنازلي للاستعداد لجائزة محمد بن راشد للتميز الحكومي</h1>
   <ul>
-    <li><span id="days"></span>يوم</li>
-    <li><span id="hours"></span>ساعة</li>
-    <li><span id="minutes"></span>دقيقة</li>
-    <li><span id="seconds"></span>ثانية</li>
+    <li><span id="days"></span><p>يوم</p></li>
+    <li><span id="hours"></span><p>ساعة</p></li>
+    <li><span id="minutes"></span><p>دقيقة</p></li>
+    <li><span id="seconds"></span><p>ثانية</p></li>
   </ul>
 </div>
 
@@ -92,10 +91,12 @@ let countDown = new Date('Aug 30, 2020 00:00:00').getTime(),
       let now = new Date().getTime(),
           distance = countDown - now;
 
-      document.getElementById('days').innerText = Math.floor(distance / (day)),
+        document.getElementById('days').innerText = Math.floor(distance / (day)),
         document.getElementById('hours').innerText = Math.floor((distance % (day)) / (hour)),
         document.getElementById('minutes').innerText = Math.floor((distance % (hour)) / (minute)),
         document.getElementById('seconds').innerText = Math.floor((distance % (minute)) / second);
+        document.getElementById('seconds').innerText = Math.floor((distance % (minute)) / second);
+
       
       //do something later when date is reached
       //if (distance < 0) {
@@ -104,9 +105,46 @@ let countDown = new Date('Aug 30, 2020 00:00:00').getTime(),
       //}
 
     }, second)
+
+
+    var en=["Days", "hours", "Minutes","Seconds","Countdown to prepare for the Mohammed bin Rashid Award for Government Excellence"];
+    var ar= [ "يوم","ساعة","دقيقة","ثانية","العد التنازلي للاستعداد لجائزة محمد بن راشد للتميز الحكومي"];
+    var arbool=true;
+    window.setInterval(function() {
+      console.log(arbool);
+     if (arbool){
+       $("#head").html(ar[4]);
+      $("li p").eq(0).html(ar[0]);
+      $("li p").eq(1).html(ar[1]);
+      $("li p").eq(2).html(ar[2]);
+      $("li p").eq(3).html(ar[3]);
+      arbool=false;
+      }
+      else if (!arbool){
+        $("#head").html(en[4]);
+      $("li p").eq(0).html(en[0]);
+      $("li p").eq(1).html(en[1]);
+      $("li p").eq(2).html(en[2]);
+      $("li p").eq(3).html(en[3]);
+      arbool=true;
+      }
+
+      
+
+
+  
+
+
+}, 8000);
+
+
      
 </script>
      
+     <script
+  src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+  crossorigin="anonymous"></script>
 
           
     </body>
