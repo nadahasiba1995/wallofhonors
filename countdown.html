@@ -2,6 +2,9 @@
 <html>
     <head>
             <link href="https://fonts.googleapis.com/css?family=Reem+Kufi" rel="stylesheet"> 
+            <link href="https://fonts.googleapis.com/css?family=Tajawal" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+
 
             <style>
                 * {
@@ -10,7 +13,6 @@
   padding: 0;
   font-family: sans-serif;
 }
-
 
 
 body {
@@ -23,10 +25,23 @@ body {
 
 }
 
-#head-ar, #head-en{
+#head-ar, #head-en, .en-details{
     color:#333;
+    font-family: 'Ubuntu', sans-serif;
+
  
 }
+
+
+#head-ar, #head-en
+{
+  margin: 10px;
+}
+#head-ar, .ar-details{
+  font-family: 'Tajawal', sans-serif;
+
+}
+
 
 
 
@@ -66,6 +81,20 @@ li span {
 }
 
 
+.en-details, .ar-details{
+  display: inline;
+}
+
+.ar-details{
+  font-size: 20px;
+}
+
+
+.en-details{
+  font-size: 15px;
+  text-transform: capitalize;
+}
+
             </style>
     </head>
     <body>
@@ -79,10 +108,10 @@ li span {
   <h1 id="head-ar"> العد التنازلي للاستعداد لجائزة محمد بن راشد للتميز الحكومي</h1>
     <h1 id="head-en">Countdown to prepare for the Mohammed bin Rashid Award for Government Excellence</h1>
    <ul>
-    <li><span id="days"></span><p>يوم</p></li>
-    <li><span id="hours"></span><p>ساعة</p></li>
-    <li><span id="minutes"></span><p>دقيقة</p></li>
-    <li><span id="seconds"></span><p>ثانية</p></li>
+    <li><span id="days"></span><p><span class="ar-details">يوم</span>/<span class="en-details">Days</span></p></li>
+    <li><span id="hours"></span><p><span class="ar-details">ساعة</span>/<span class="en-details">Hours</span></p></li>
+    <li><span id="minutes"></span><p><span class="ar-details">دقيقة</span>/<span class="en-details">Minutes</span></p></li>
+    <li><span id="seconds"></span><p><span class="ar-details">ثانية</span>/<span class="en-details">Seconds</span></p></li>
   </ul>
 </div>
 
