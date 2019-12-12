@@ -1,0 +1,414 @@
+<div style="margin: auto; width:60%; background:#f7f2e8; padding: 10px; ">
+ <div id="main-content">
+        <style>
+                .collapse-container table {
+                      border-collapse: collapse;
+                      width: 100%;
+              direction: rtl;
+              text-align: right;
+                  }
+             
+                  .collapse-container th {
+                      background: #ccc;
+                  }
+             
+                  .collapse-container th,
+                   .collapse-container td {
+                      border: 1px solid #ccc;
+                      padding: 8px;
+                  }
+             
+                  .collapse-container tr:nth-child(even) {
+                      background: #efefef;
+                  }
+             
+                  .collapse-container tr:hover {
+                      background: #d1d1d1;
+                  }
+             
+                 
+             
+                  .collapse-container td.emp-name {
+                      width: 15%;
+                      
+                  }
+             
+                  .collapse-container td.description {
+                      width: 70%;
+                      
+                  }
+             
+                  .collapse-container tr:first-child {
+                background: #dfdfdf;
+                font-weight: 600;
+            }
+             
+              
+               
+                  .collapse-container {
+                      width: 100%;
+                      margin: 0 auto;
+                      text-align: center;
+                      margin-top: 45px;
+                      padding-bottom: 15px;
+                  }
+             
+                  .collapse-container .header {
+                      width: 100%;
+                      padding: 30px 15px;
+                      color: #000;
+                      margin-bottom: 7.5px;
+                  }
+             
+                  .collapse-container .header p {
+                      color: #808080;
+                      margin-bottom: 0;
+                  }
+             
+                  .collapse-container .collapse-item {
+                      width: 100%;
+                      margin-bottom: 7.5px;
+                  }
+             
+                  .collapse-container .collapse-item input[type="checkbox"] {
+                      display: none;
+                  }
+             
+                  .collapse-container .collapse-item input[type="checkbox"]:checked+label {
+                      background-color: #fde5cd;
+                      color: #000000;
+                  }
+             
+                  .collapse-container .collapse-item input[type="checkbox"]:checked+label:after {
+                      content: "-";
+                     
+                  }
+             
+                  .collapse-container .collapse-item input[type="checkbox"]:checked+label+div {
+                      display: block;
+                  }
+             
+                  .collapse-container .collapse-item label {
+                      display: block;
+                      width: auto;
+                      position: relative;
+                      padding: 15px;
+                      background-color: #ffd6ad;
+                    
+                      text-align: right;
+                      cursor: pointer;
+                      webkit-touch-callout: none;
+                      -webkit-user-select: none;
+                      -khtml-user-select: none;
+                      -moz-user-select: none;
+                      -ms-user-select: none;
+                      user-select: none;
+                  }
+             
+                  .collapse-container .collapse-item label:after {
+                      content: "+";
+                      font-weight: bold;
+                      position: absolute;
+                      left: 15px;
+                     
+                  }
+             
+                  .collapse-container .collapse-item label:hover {
+                      background-color: #fde5cd;
+                     
+                      -webkit-transition: background-color 100ms linear;
+                      -moz-transition: background-color 100ms linear;
+                      -o-transition: background-color 100ms linear;
+                      transition: background-color 100ms linear;
+                  }
+             
+                  .collapse-container .collapse-item label:hover:after {
+                      color: black;
+                  }
+             
+                  .collapse-container .collapse-item div {
+                      display: none;
+                      border-top: none;
+                      padding: 15px;
+                      background-color: #fff;
+                      text-align: left;
+                      width:auto;
+                   }
+               #emp-header{
+                  display: block;
+                  width: 100%;
+                  background-position: bottom;
+                  background-size: cover;
+             
+             
+              
+               }
+               #emp-header div{
+            padding:15px;}
+             
+              #emp-header ul {
+                   list-style: none;
+                  text-align: center;
+                  display: block;
+                  margin: auto;
+                 
+              
+              }
+             
+              #emp-header ul li{
+             
+                  display: inline;
+                  margin: 15px;
+                 
+                
+              }
+              button.add-btn {
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            background: #69b964;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            margin: 10px;
+        }
+            #emp-header a{
+            color:blue;
+            }
+             
+              #emp-header ul li a{
+                  color: white !important;
+                  text-decoration: none;
+                  padding: 10px;
+                  background-color: #e1942c;
+                  border-radius: 5px;
+             
+              }
+             .remove-row-btn{
+                border-radius: 50%;
+            border: none;
+            background: #ea5b5b;
+            width: 20px;
+            height: 20px;
+            font-size: 12px;
+            color: white;
+            margin: auto;
+            display: block;
+            font-weight: 700;
+            cursor: pointer;
+            outline: none;
+             }
+
+             span[contenteditable="true"]{
+     border:2px dashed #69b964;
+     padding: 3px 10px;
+
+             }
+
+             #month-year{
+                margin: 0 5px;
+             }
+
+              </style>
+      <p class="ms-rteFontSize-4" style="text-align: center;"><strong>  موظف الإدارة المتميز  لشهر<span id="month-year" contenteditable="true">نوفمبر 2019</span> </strong></p>
+      <img width="50" src="/Arabic/PublishingImages/award.png" alt="" style="width: 250px; padding-top: 31px; margin: auto; display: block;"/><span style="font-size: 14px; text-align: center;">​</span><span style="font-size: 14px; text-align: center;">&#160;</span><div id="emp-header"><div style="text-align: center; font-size: 14px;"><p>موظف الإدارة / الوحدة المتميز: عبارة عن موظف متميز يتم ترشيحه من قبل مدير الإدارة المعنية، و تضاف الى رصيده 20 نقطة ضمن برنامج الفرسان للحفز الوظيفي، والحاصل على العدد الأعلى للنقاط يتم ترشيحه لجائزة الجهود المتميزة ويتم تكريمه في الحفل السنوي للهيئة.</p>
+                  <p>  (للمزيد من المعلومات يرجى الاطلاع على  <a href="/Arabic/InductionManuals/Forsan_Prog.pdf" style="text-decoration: underline;">دليل برنامج الفرسان للحفز الوظيفي </a>) </p>
+      <p><br/>&#160;</p>
+          <ul>
+      <li>
+              <a href="/Arabic/Pages/EmployeeOfTheMonth/EOM201910.aspx">الشهر السابق</a>
+      </li>
+      <!--<li>
+              <a href="#"> الشهر اللاحق</a>
+     
+      </li> -->
+     
+          </ul>
+                   </div>
+               </div>
+     
+      <div class="collapse-container">
+              <!--  collapse-item 1 -->
+              <div class=" collapse-item"><input id="box-1" type="checkbox"/> <label for="box-1"><b>الإدارة العامة</b>
+                       </label>
+                  <div id="directors-board-sector">
+         
+          
+                          <table>
+                                  <tbody>
+                                      <tr>
+                                            <td width="20px">
+                             
+                                                    
+                                            </td>
+                                            <td class="department">
+                             
+                                              <p>الإدارة المعنية
+                             
+                                              </p>
+                                          </td>
+                                          <td class="emp-name">
+                                              <p>اسم الموظف
+                              
+                                              </p>
+                                          </td>
+                                          <td class="description">
+                                              <p>أسباب الترشيح
+                             
+                                              </p>
+                                          </td>
+                             
+                              
+                              
+                              
+                                      </tr>
+                                    
+                                  </tbody>
+                              </table>
+                              <button class="add-btn">+ إضافة صف جديد</button>
+                  </div>
+              </div>
+              <!--  collapse-item 2 -->
+              <div class=" collapse-item"><input id="box-2" type="checkbox"/> <label for="box-2"><b>قطاع عمليات الأسواق</b></label>
+             <div id="market-operation-sector">
+         
+                  <table>
+                          <tbody>
+                                <tr>
+                                        <td width="20px">
+                         
+                                                
+                                        </td>
+                                        <td class="department">
+                         
+                                          <p>الإدارة المعنية
+                         
+                                          </p>
+                                      </td>
+                                      <td class="emp-name">
+                                          <p>اسم الموظف
+                          
+                                          </p>
+                                      </td>
+                                      <td class="description">
+                                          <p>أسباب الترشيح
+                         
+                                          </p>
+                                      </td>
+                         
+                          
+                          
+                          
+                                  </tr>
+                              
+                          </tbody>
+                      </table>
+                      
+                    <button class="add-btn">+ إضافة صف جديد</button>
+          
+             </div>
+          </div>
+         
+          <div class=" collapse-item"><input id="box-3" type="checkbox"/> <label for="box-3"> <b>قطاع الخدمات المؤسسية</b>
+              </label>
+          <div id="organizational-support-sector">
+         
+              <table>
+                      <tbody>
+                            <tr>
+                                    <td width="20px">
+                     
+                                            
+                                    </td>
+                                    <td class="department">
+                     
+                                      <p>الإدارة المعنية
+                     
+                                      </p>
+                                  </td>
+                                  <td class="emp-name">
+                                      <p>اسم الموظف
+                      
+                                      </p>
+                                  </td>
+                                  <td class="description">
+                                      <p>أسباب الترشيح
+                     
+                                      </p>
+                                  </td>
+                     
+                      
+                      
+                      
+                              </tr>
+                             
+                          </tbody>
+                      </table>
+                 <button class="add-btn">+ إضافة صف جديد</button>
+                
+          
+          </div>
+          </div>
+          </div>
+</div>
+<a style="
+    background: #49a2fd;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin: auto;
+    display: block;
+    width: 100px;
+    text-align: center;
+    text-decoration: none;
+" href="#" id="downloadLink">تم</a>
+</div>
+ 
+          <script
+          src="https://code.jquery.com/jquery-3.4.1.js"
+          integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+          crossorigin="anonymous"></script>
+          <script>
+
+$(".add-btn").on("click", function(){
+ 
+ var parentDiv = $(this).parent().attr("id")
+ 
+ $("#"+ parentDiv + " table").append("<tr><td><button class='remove-row-btn'>-</button></td><td contenteditable='true'></td><<td contenteditable='true'></td><td contenteditable='true'></td></tr>")
+
+});
+
+
+$(document).on("click", ".remove-row-btn",function(){
+ 
+  $(this).closest("tr").remove();
+
+});
+
+
+ 
+    function downloadInnerHtml(filename, elId, mimeType) {
+
+        
+        var elHtml = document.getElementById(elId).innerHTML;
+        var link = document.createElement('a');
+        mimeType = mimeType || 'text/plain';
+    
+        link.setAttribute('download', filename);
+        link.setAttribute('href', 'data:' + mimeType + ';charset=utf-8,' + encodeURIComponent(elHtml));
+        link.click(); 
+    }
+    
+    var fileName =  'employee-of-month.html'; // You can use the .txt extension if you want
+    
+    $('#downloadLink').click(function(){
+        $("#main-content td").removeAttr("contenteditable");
+        $("#main-content .add-btn").remove();
+        $("#main-content table td:first-child").remove();
+        $("#month-year").removeAttr("contenteditable");
+         downloadInnerHtml(fileName, 'main-content','text/html');
+    });
+
+
+
+              </script>
