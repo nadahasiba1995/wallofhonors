@@ -8,8 +8,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   </head>
   <body>
-
-<div style="margin: auto; width:60%; background:#f7f2e8; padding: 10px; ">
+<div id="overlay"><h1 align="center" style="    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);">تم حفظ الملف </h1> </div>
+<div id="container" style="margin: auto; width:60%; background:#f7f2e8; padding: 10px;">
  <div id="main-content">
         <style>
                 .collapse-container table {
@@ -372,7 +376,7 @@
     width: 100px;
     text-align: center;
     text-decoration: none;
-" id="downloadLink">تم</a>
+" href="#" id="downloadLink">تم</a>
 </div>
  
           <script
@@ -404,20 +408,25 @@ $(document).on("click", ".remove-row-btn",function(){
         var elHtml = document.getElementById(elId).innerHTML;
         var link = document.createElement('a');
         mimeType = mimeType || 'text/plain';
-      
+    
         link.setAttribute('download', filename);
-//         link.setAttribute('href', 'data:' + mimeType + ';charset=utf-8,' + encodeURIComponent(elHtml));
-        link.click(); 
+        link.setAttribute('href', 'data:' + mimeType + ';charset=utf-8,' + encodeURIComponent(elHtml));
+         link.click(); 
+        ;
     }
     
     var fileName =  'employee-of-month.html'; // You can use the .txt extension if you want
     
     $('#downloadLink').click(function(){
+    
         $("#main-content td").removeAttr("contenteditable");
         $("#main-content .add-btn").remove();
         $("#main-content table td:first-child").remove();
         $("#month-year").removeAttr("contenteditable");
         $("#award-img").attr("src","/Arabic/PublishingImages/award.png");
+        $("#container").css("opacity","0");
+        $("#overlay").css({"background-color": "black","content":"", "position":"absolute","width":"100%", "height":"100%", "z-index":"99", "left":"0","top":"0"})
+        
          downloadInnerHtml(fileName, 'main-content','text/html');
     });
 
