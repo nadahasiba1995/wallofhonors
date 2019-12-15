@@ -13,7 +13,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);">تم حفظ الملف </h1> </div>
-<div id="container" style="margin: auto; width:60%; background:#f7f2e8; padding: 10px; direction:rtl;">
+<div id="container" style="margin: auto; width:60%; background:#f7f2e8; padding: 10px; direction: rtl;">
  <div id="main-content">
         <style>
                 .collapse-container table {
@@ -366,6 +366,19 @@
           </div>
           </div>
 </div>
+
+<div style="text-align: center;
+padding: 10px;
+color: red;
+display: none;
+font-size: 17px;" id="confirmation-btn">
+    هل أنت متأكد؟ 
+
+    ملاحظة: سيتم تفريغ الصفحة من المحتوى عند ضغط "نعم"
+   
+<button id="yes">نعم</button> <button id="no">إغلاق</button>
+</div>
+
 <a style="
     background: #49a2fd;
     color: white;
@@ -419,7 +432,15 @@ $(document).on("click", ".remove-row-btn",function(){
     
     $('#downloadLink').click(function(){
     
-        $("#main-content td").removeAttr("contenteditable");
+    $("#confirmation-btn").show();
+         
+    });
+
+$("#confirmation-btn button").on("click", function(){
+
+   if ($(this).attr("id") == "yes")
+   {
+    $("#main-content td").removeAttr("contenteditable");
         $("#main-content .add-btn").remove();
         $("#main-content table td:first-child").remove();
         $("#month-year").removeAttr("contenteditable");
@@ -428,8 +449,10 @@ $(document).on("click", ".remove-row-btn",function(){
         $("#overlay").css({"background-color": "black","content":"", "position":"absolute","width":"100%", "height":"100%", "z-index":"99", "left":"0","top":"0","opacity":"1"})
 
          downloadInnerHtml(fileName, 'main-content','text/html');
-    });
-
+   }else {
+    $("#confirmation-btn").hide();
+   }
+}) 
 
 
               </script>
